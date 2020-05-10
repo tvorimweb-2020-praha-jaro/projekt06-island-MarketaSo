@@ -18,26 +18,236 @@ body {
 }
 
 
+
 /* HLAVICKA */
 
 .titulek {
     font-family: 'Raleway', serif;
 }
 
+header {
+    background-image: url(images/island-hlavicka.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.perex {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.autor {
+    color: whitesmoke;
+    margin-top: 40px;
+}
+
 
 /* MENU */
 
-
+.menu li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+    
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+}
 
 
 /* OBSAH */
 
+img {
+    width: 100%;
+}
 
+.popisek {
+    text-align: center;
+    font-size: small;
+    margin-top: 0;
+}
+
+.popisek a {
+    text-decoration: underline;
+    text-transform: initial;
+}
+
+h2 {
+    padding:  10px;
+}
+
+.odstavec1 {
+    padding: 10px;
+}
+
+.odstavec2 {
+    padding: 10px;
+}
+
+.odstavec3 {
+    padding: 10px;
+}
+
+.odstavec4 {
+    padding: 10px;
+}
 
 
 /* FOTOGALERIE */
 
-
+.galerie .popisek {
+    color: gray;
+}
 
 
 /* PATICKA */
+
+footer {
+    font-size: small;
+    padding-top: 30px;
+    background-image: linear-gradient(to top, #f5f5f5, lightgray );
+    color: gray;
+}
+
+footer a {
+    text-transform: initial;
+    text-decoration: underline;
+}
+
+@media (min-width: 500px) {
+    /* MENU */
+    .menu li {
+        display: inline-block;
+        padding: 30px 30px;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .menu a {
+        display: inline-block;
+    }
+
+/* OBSAH */
+h2 {
+    padding:  20px;
+}
+
+.odstavec1 {
+    padding: 20px;
+}
+
+.odstavec2 {
+    padding: 20px;
+}
+
+.odstavec3 {
+    padding: 20px;
+}
+
+.odstavec4 {
+    padding: 20px;
+}
+
+.img1_popisky {
+    position: relative;
+}
+
+.popisek1 {
+    position: absolute;
+    color: grey;
+}
+
+.popisek1 a {
+    color: gray;
+}
+
+.img2_popisky {
+    position: relative;
+}
+
+.popisek2 {
+    position: absolute;
+    color: gray;
+}
+
+.popisek2 a {
+    color: gray;
+}
+
+.img3_popisky {
+    position: relative;
+}
+
+.popisek3 {
+    position: absolute;
+    color: gray;
+}
+
+.popisek3 a {
+    color: gray;
+}
+
+.galerie .foto {
+    width: 50%;
+    float: left;
+}
+
+.galerie .popisek {
+    display: none;
+}
+}
+
+@media (min-width: 1000px) {
+    .galerie .foto {
+        width: calc(100% / 3);
+    }
+
+    .foto:hover img {
+        transform: scale(1.15);
+    }
+
+
+    .header {
+        background-size: 100%;
+    }
+
+    .bilypruh {
+        width: 960px;
+        transform: translate(0, -30px);
+        background-color: white;  
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .odstavec2 {
+        padding-right: 200px;
+    }
+
+    .odstavec1,
+    .nadpis1,
+    .odstavec3, 
+    .odstavec4,
+    .nadpis3 {
+        padding-left: 200px;
+    }
+
+}
+
+
+
+
