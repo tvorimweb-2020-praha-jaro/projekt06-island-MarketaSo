@@ -127,13 +127,14 @@ footer a {
     /* MENU */
     .menu li {
         display: inline-block;
-        padding: 30px 30px;
+        padding: 15px 15px;
     }
 
     .menu {
+        display: flex;
         margin: 0;
         padding: 0;
-        text-align: center;
+        justify-content: center;
     }
 
     .menu a {
@@ -166,12 +167,16 @@ h2 {
 }
 
 .popisek1 {
-    position: absolute;
-    color: grey;
+    transform: translate(-15px, -45px);
+    color: white;
+}
+
+.popisek {
+    text-align: right;
 }
 
 .popisek1 a {
-    color: gray;
+    color: white;
 }
 
 .img2_popisky {
@@ -179,12 +184,12 @@ h2 {
 }
 
 .popisek2 {
-    position: absolute;
-    color: gray;
+    transform: translate(-15px, -45px);
+    color: white;
 }
 
 .popisek2 a {
-    color: gray;
+    color: white;
 }
 
 .img3_popisky {
@@ -192,12 +197,12 @@ h2 {
 }
 
 .popisek3 {
-    position: absolute;
-    color: gray;
+    transform: translate(-15px, -45px);
+    color: white;
 }
 
 .popisek3 a {
-    color: gray;
+    color: white;
 }
 
 .galerie .foto {
@@ -208,6 +213,11 @@ h2 {
 .galerie .popisek {
     display: none;
 }
+
+footer {
+    clear: both;
+}
+
 }
 
 @media (min-width: 1000px) {
@@ -219,23 +229,35 @@ h2 {
         transform: scale(1.15);
     }
 
-
     .header {
         background-size: 100%;
     }
 
     .bilypruh {
         width: 960px;
-        transform: translate(0, -30px);
+        margin:  0 auto;
+        margin-top: -30px;
         background-color: white;  
+    }
+
+    .menuvlevo {
+        display: flex;
     }
 
     .menu {
         display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 20px;
+    }
+
+    .menu li {
+        text-align: left;
+        font-size: 12px;
     }
 
     .odstavec2 {
-        padding-right: 200px;
+        padding-right: 150px;
     }
 
     .odstavec1,
@@ -243,7 +265,7 @@ h2 {
     .odstavec3, 
     .odstavec4,
     .nadpis3 {
-        padding-left: 200px;
+        padding-left: 150px;
     }
 
 }
